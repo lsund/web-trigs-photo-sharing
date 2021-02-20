@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title>Photo Sharing</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+	<header>
+		<h1>
+			<b>Photo Sharing</b>
+			<img src="logo.jpg" alt="">
+		</h1>
+
+		<article class="profile">
+			<img src="dummy.jpg" alt="avatar">
+			<b>John Doe</b>
+			<small>web dresser</small>
+			<a href="#profile">edit</a>
+		</article>
+
+		<a href="#upload">upload</a>
+	</header>
+
+	<main>
+		<ol class="gallery">
+			<li>
+				<a href="https://images.nasa.gov/details-PIA24430">
+					<figure>
+						<img src="https://images-assets.nasa.gov/image/PIA24430/PIA24430~small.jpg" alt="">
+						<figcaption>Perseverance's First Full-Color Look at Mars</figcaption>
+					</figure>
+				</a>
+				<community-likes></community-likes>
+			</li>
+			<li>
+				<a href="https://phil.cdc.gov/Details.aspx?pid=23311">
+					<figure>
+						<img src="https://phil.cdc.gov//PHIL_Images/23311/23311_lores.jpg" alt="">
+						<figcaption>coronavirus morphology</figcaption>
+					</figure>
+				</a>
+				<community-likes></community-likes>
+			</li>
+			<li>
+				<a href="https://collections.si.edu/search/detail/edanmdm:fsg_F1909.94">
+					<figure>
+						<img src="https://ids.si.edu/ids/deliveryService?id=FS-7755_05&max=500" alt="">
+						<figcaption>Pedestal with lotus petals, lions, and donor, originally supporting a Shijia Buddha (Shakyamuni) figure</figcaption>
+					</figure>
+				</a>
+				<community-likes></community-likes>
+			</li>
+			<li>
+				<a href="https://www.flickr.com/photos/statelibraryofnsw/44252700480/">
+					<figure>
+						<img src="https://live.staticflickr.com/4851/44252700480_24c12b914c_z.jpg" alt="">
+						<figcaption>Stephen Butts on a white horse, Macquarie Street, Sydney, c.1850</figcaption>
+					</figure>
+				</a>
+				<community-likes></community-likes>
+			</li>
+		</ol>
+	</main>
+
+	<footer>
+		© 2021
+		<a href="https://github.com/FND/web-trigs-photo-sharing">Web Trigs community</a>
+	</footer>
+
+	<form id="upload">
+		<fieldset>
+			<legend>image upload</legend>
+			<label>
+				image
+				<input type="file" name="image">
+			</label>
+			<label>
+				title
+				<input name="title">
+			</label>
+			<button>add</button>
+		</fieldset>
+	</form>
+
+	<form id="profile">
+		<fieldset>
+			<legend>profile</legend>
+			<label>
+				name
+				<input name="name">
+			</label>
+			<label>
+				role, title or other nonsense
+				<input name="role">
+			</label>
+			<label>
+				avatar image
+				<input type="file" name="avatar">
+			</label>
+			<button>save</button>
+		</fieldset>
+	</form>
+</body>
+
+</html>
