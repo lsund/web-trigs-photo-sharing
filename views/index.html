@@ -27,42 +27,17 @@
 
 	<main>
 		<ol class="gallery">
+			{% for image in images %}
 			<li>
-				<a href="https://images.nasa.gov/details-PIA24430">
+				<a href="{{ image.url }}">
 					<figure>
-						<img src="https://images-assets.nasa.gov/image/PIA24430/PIA24430~small.jpg" alt="">
-						<figcaption>Perseverance's First Full-Color Look at Mars</figcaption>
+						<img src="{{ image.image }}" alt="">
+						<figcaption>{{ image.caption }}</figcaption>
 					</figure>
 				</a>
 				<community-likes></community-likes>
 			</li>
-			<li>
-				<a href="https://phil.cdc.gov/Details.aspx?pid=23311">
-					<figure>
-						<img src="https://phil.cdc.gov//PHIL_Images/23311/23311_lores.jpg" alt="">
-						<figcaption>coronavirus morphology</figcaption>
-					</figure>
-				</a>
-				<community-likes></community-likes>
-			</li>
-			<li>
-				<a href="https://collections.si.edu/search/detail/edanmdm:fsg_F1909.94">
-					<figure>
-						<img src="https://ids.si.edu/ids/deliveryService?id=FS-7755_05&max=500" alt="">
-						<figcaption>Pedestal with lotus petals, lions, and donor, originally supporting a Shijia Buddha (Shakyamuni) figure</figcaption>
-					</figure>
-				</a>
-				<community-likes></community-likes>
-			</li>
-			<li>
-				<a href="https://www.flickr.com/photos/statelibraryofnsw/44252700480/">
-					<figure>
-						<img src="https://live.staticflickr.com/4851/44252700480_24c12b914c_z.jpg" alt="">
-						<figcaption>Stephen Butts on a white horse, Macquarie Street, Sydney, c.1850</figcaption>
-					</figure>
-				</a>
-				<community-likes></community-likes>
-			</li>
+			{% endfor %}
 		</ol>
 	</main>
 
