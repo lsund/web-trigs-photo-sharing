@@ -4,3 +4,8 @@ an attempt to illustrate how
 helps in designing and building better web presences
 
 (created as part of an internal workshop)
+
+## Prerequisites
+
+Requires node with ES6 support (nodejs >= 13.0). Or older version run with the
+`--experimental-modules` flag.
